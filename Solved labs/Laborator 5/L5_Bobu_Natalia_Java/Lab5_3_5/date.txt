@@ -1,0 +1,13 @@
+Adresa IP in format binar :11000000101010000000000000000001
+Masca SR in format binar :11111111111111111111111110000000
+Adresa IP este de clasa C
+Nr. biti pentru retea : 25
+Nr. biti pentru host : 7
+Masca de subretea : /25
+Adresa in binar a subretelei din care face parte adresa IP: 11000000101010000000000000000000
+Adresa in format zecimal a subretelei din care face parte adresa IP: 192.168.0.0
+Masca de subretea pentru clasa de adrese din care face parte adresa IP : 255.255.255.0
+Numarul de subretele posibile in reteaua specificata : 2097152 (2^21)
+Numarul de gazde pentru fiecare subretea in parte : 256 (2^8)
+Adresa broadcast in binar a retelei : 11000000101010000000000001111111
+Adresa broadcast in format zecimal : 192.168.0.127
