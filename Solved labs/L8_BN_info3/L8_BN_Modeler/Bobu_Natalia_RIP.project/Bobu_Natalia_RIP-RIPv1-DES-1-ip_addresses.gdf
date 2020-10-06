@@ -1,0 +1,120 @@
+# 
+# Purpose:   Contains IP address information for all active 
+#            interfaces in the current network model.
+#            (created by exporting this information from the model.)
+# 
+
+# Node Name: Campus Network.Backbone_South
+#  Iface Name            IP Address       Subnet Mask      Connected Link
+#  ----------            ---------------  ---------------  ----------------
+   IF4                      192.0.5.2        255.255.255.0    Campus Network.duplex_2
+   IF5                      192.0.9.2        255.255.255.0    Campus Network.duplex_9
+   IF10                     192.0.1.2        255.255.255.0    Campus Network.duplex_0
+   IF11                     192.0.2.2        255.255.255.0    Campus Network.duplex_1
+
+
+# Node Name: Campus Network.Backbone_East
+#  Iface Name            IP Address       Subnet Mask      Connected Link
+#  ----------            ---------------  ---------------  ----------------
+   IF4                      192.0.6.2        255.255.255.0    Campus Network.duplex_4
+   IF5                      192.0.10.2       255.255.255.0    Campus Network.duplex_8
+   IF10                     192.0.1.1        255.255.255.0    Campus Network.duplex_0
+   IF11                     192.0.3.2        255.255.255.0    Campus Network.duplex_3
+
+
+# Node Name: Campus Network.Backbone_North
+#  Iface Name            IP Address       Subnet Mask      Connected Link
+#  ----------            ---------------  ---------------  ----------------
+   IF4                      192.0.4.2        255.255.255.0    Campus Network.duplex_5
+   IF5                      192.0.7.2        255.255.255.0    Campus Network.duplex_6
+   IF10                     192.0.2.1        255.255.255.0    Campus Network.duplex_1
+   IF11                     192.0.3.1        255.255.255.0    Campus Network.duplex_3
+
+
+# Node Name: Campus Network.Backbone_West
+#  Iface Name            IP Address       Subnet Mask      Connected Link
+#  ----------            ---------------  ---------------  ----------------
+   IF4                      192.0.4.1        255.255.255.0    Campus Network.duplex_5
+   IF5                      192.0.8.2        255.255.255.0    Campus Network.duplex_7
+   IF10                     192.0.5.1        255.255.255.0    Campus Network.duplex_2
+   IF11                     192.0.6.1        255.255.255.0    Campus Network.duplex_4
+
+
+# Node Name: Campus Network.NorthNet.Central
+#  Iface Name            IP Address       Subnet Mask      Connected Link
+#  ----------            ---------------  ---------------  ----------------
+   IF0                      150.10.10.1      255.255.255.0    Campus Network.NorthNet.West <-> Central
+   IF1                      150.10.20.1      255.255.255.0    Campus Network.NorthNet.Central <-> East
+   IF10                     192.0.7.1        255.255.255.0    Campus Network.duplex_6
+
+
+# Node Name: Campus Network.NorthNet.West
+#  Iface Name            IP Address       Subnet Mask      Connected Link
+#  ----------            ---------------  ---------------  ----------------
+   IF0                      150.10.10.2      255.255.255.0    Campus Network.NorthNet.West <-> Central
+
+
+# Node Name: Campus Network.NorthNet.East
+#  Iface Name            IP Address       Subnet Mask      Connected Link
+#  ----------            ---------------  ---------------  ----------------
+   IF0                      150.10.20.2      255.255.255.0    Campus Network.NorthNet.Central <-> East
+
+
+# Node Name: Campus Network.WestNet.Central
+#  Iface Name            IP Address       Subnet Mask      Connected Link
+#  ----------            ---------------  ---------------  ----------------
+   IF0                      150.30.10.1      255.255.255.0    Campus Network.WestNet.West <-> Central
+   IF1                      150.30.20.1      255.255.255.0    Campus Network.WestNet.Central <-> East
+   IF10                     192.0.8.1        255.255.255.0    Campus Network.duplex_7
+
+
+# Node Name: Campus Network.WestNet.West
+#  Iface Name            IP Address       Subnet Mask      Connected Link
+#  ----------            ---------------  ---------------  ----------------
+   IF0                      150.30.10.2      255.255.255.0    Campus Network.WestNet.West <-> Central
+
+
+# Node Name: Campus Network.WestNet.East
+#  Iface Name            IP Address       Subnet Mask      Connected Link
+#  ----------            ---------------  ---------------  ----------------
+   IF0                      150.30.20.2      255.255.255.0    Campus Network.WestNet.Central <-> East
+
+
+# Node Name: Campus Network.SouthNet.Central
+#  Iface Name            IP Address       Subnet Mask      Connected Link
+#  ----------            ---------------  ---------------  ----------------
+   IF0                      150.70.10.1      255.255.255.0    Campus Network.SouthNet.West <-> Central
+   IF1                      150.70.20.1      255.255.255.0    Campus Network.SouthNet.Central <-> East
+   IF10                     192.0.9.1        255.255.255.0    Campus Network.duplex_9
+
+
+# Node Name: Campus Network.SouthNet.West
+#  Iface Name            IP Address       Subnet Mask      Connected Link
+#  ----------            ---------------  ---------------  ----------------
+   IF0                      150.70.10.2      255.255.255.0    Campus Network.SouthNet.West <-> Central
+
+
+# Node Name: Campus Network.SouthNet.East
+#  Iface Name            IP Address       Subnet Mask      Connected Link
+#  ----------            ---------------  ---------------  ----------------
+   IF0                      150.70.20.2      255.255.255.0    Campus Network.SouthNet.Central <-> East
+
+
+# Node Name: Campus Network.EastNet.Central
+#  Iface Name            IP Address       Subnet Mask      Connected Link
+#  ----------            ---------------  ---------------  ----------------
+   IF0                      150.50.10.1      255.255.255.0    Campus Network.EastNet.West <-> Central
+   IF1                      150.50.20.1      255.255.255.0    Campus Network.EastNet.Central <-> East
+   IF10                     192.0.10.1       255.255.255.0    Campus Network.duplex_8
+
+
+# Node Name: Campus Network.EastNet.West
+#  Iface Name            IP Address       Subnet Mask      Connected Link
+#  ----------            ---------------  ---------------  ----------------
+   IF0                      150.50.10.2      255.255.255.0    Campus Network.EastNet.West <-> Central
+
+
+# Node Name: Campus Network.EastNet.East
+#  Iface Name            IP Address       Subnet Mask      Connected Link
+#  ----------            ---------------  ---------------  ----------------
+   IF0                      150.50.20.2      255.255.255.0    Campus Network.EastNet.Central <-> East

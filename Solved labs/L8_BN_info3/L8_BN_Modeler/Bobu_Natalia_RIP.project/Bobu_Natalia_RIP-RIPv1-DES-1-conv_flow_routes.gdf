@@ -1,0 +1,31 @@
+
+
+Campus Network.Backbone_West,Campus Network.EastNet.Central,41.17,0,Backbone_West --> Central,Campus Network.Backbone_West,Campus Network.duplex_4,Campus Network.Backbone_East,Campus Network.duplex_8
+
+Campus Network.Backbone_West,Campus Network.Backbone_South,41.90,1,Backbone_West --> Backbone_South,Campus Network.Backbone_West,Campus Network.duplex_2
+
+Campus Network.Backbone_West,Campus Network.WestNet.Central,42.48,2,Backbone_West --> Central,Campus Network.Backbone_West,Campus Network.duplex_7
+
+Campus Network.Backbone_West,Campus Network.WestNet.East,43.53,3,Backbone_West --> East,Campus Network.Backbone_West,Campus Network.duplex_7,Campus Network.WestNet.Central,Campus Network.WestNet.Central <-> East
+
+Campus Network.Backbone_West,Campus Network.NorthNet.West,43.59,4,Backbone_West --> West,Campus Network.Backbone_West,Campus Network.duplex_5,Campus Network.Backbone_North,Campus Network.duplex_6,Campus Network.NorthNet.Central,Campus Network.NorthNet.West <-> Central
+
+Campus Network.Backbone_West,Campus Network.Backbone_North,45.00,5,Backbone_West --> Backbone_North,Campus Network.Backbone_West,Campus Network.duplex_5
+
+Campus Network.Backbone_West,Campus Network.SouthNet.West,45.28,6,Backbone_West --> West,Campus Network.Backbone_West,Campus Network.duplex_2,Campus Network.Backbone_South,Campus Network.duplex_9,Campus Network.SouthNet.Central,Campus Network.SouthNet.West <-> Central
+
+Campus Network.Backbone_West,Campus Network.SouthNet.Central,45.32,7,Backbone_West --> Central,Campus Network.Backbone_West,Campus Network.duplex_2,Campus Network.Backbone_South,Campus Network.duplex_9
+
+Campus Network.Backbone_West,Campus Network.EastNet.East,45.37,8,Backbone_West --> East,Campus Network.Backbone_West,Campus Network.duplex_4,Campus Network.Backbone_East,Campus Network.duplex_8,Campus Network.EastNet.Central,Campus Network.EastNet.Central <-> East
+
+Campus Network.Backbone_West,Campus Network.WestNet.West,46.94,9,Backbone_West --> West,Campus Network.Backbone_West,Campus Network.duplex_7,Campus Network.WestNet.Central,Campus Network.WestNet.West <-> Central
+
+Campus Network.Backbone_West,Campus Network.NorthNet.Central,48.48,10,Backbone_West --> Central,Campus Network.Backbone_West,Campus Network.duplex_5,Campus Network.Backbone_North,Campus Network.duplex_6
+
+Campus Network.Backbone_West,Campus Network.Backbone_East,48.80,11,Backbone_West --> Backbone_East,Campus Network.Backbone_West,Campus Network.duplex_4
+
+Campus Network.Backbone_West,Campus Network.SouthNet.East,49.18,12,Backbone_West --> East,Campus Network.Backbone_West,Campus Network.duplex_2,Campus Network.Backbone_South,Campus Network.duplex_9,Campus Network.SouthNet.Central,Campus Network.SouthNet.Central <-> East
+
+Campus Network.Backbone_West,Campus Network.NorthNet.East,49.75,13,Backbone_West --> East,Campus Network.Backbone_West,Campus Network.duplex_5,Campus Network.Backbone_North,Campus Network.duplex_6,Campus Network.NorthNet.Central,Campus Network.NorthNet.Central <-> East
+
+Campus Network.Backbone_West,Campus Network.EastNet.West,49.86,14,Backbone_West --> West,Campus Network.Backbone_West,Campus Network.duplex_4,Campus Network.Backbone_East,Campus Network.duplex_8,Campus Network.EastNet.Central,Campus Network.EastNet.West <-> Central

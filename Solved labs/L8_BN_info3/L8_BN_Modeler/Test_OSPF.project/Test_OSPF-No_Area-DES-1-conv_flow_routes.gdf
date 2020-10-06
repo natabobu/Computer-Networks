@@ -1,0 +1,5 @@
+
+
+Campus Network.Router A,Campus Network.Router C,161.65,0,Router A --> Router C,Campus Network.Router A,Campus Network.Router A <-> Router D,Campus Network.Router D,Campus Network.Router D <-> Router E,Campus Network.Router E,Campus Network.Router C <-> Router E
+
+Campus Network.Router B,Campus Network.Router H,162.99,1,Router B --> Router H,Campus Network.Router B,Campus Network.Router A <-> Router B,Campus Network.Router A,Campus Network.Router A <-> Router D,Campus Network.Router D,Campus Network.Router D <-> Router F,Campus Network.Router F,Campus Network.Router F <-> Router H
