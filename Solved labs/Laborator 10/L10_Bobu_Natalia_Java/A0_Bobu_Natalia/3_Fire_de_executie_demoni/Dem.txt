@@ -1,0 +1,6 @@
+@echo OFF
+@echo Dem
+@echo:
+javac Dem.java
+java Dem
+pause

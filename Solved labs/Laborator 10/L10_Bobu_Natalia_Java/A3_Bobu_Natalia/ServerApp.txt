@@ -1,0 +1,6 @@
+@echo OFF
+@echo ServerApp
+@echo:
+javac ServerApp.java
+java ServerApp
+pause

@@ -1,0 +1,6 @@
+@echo OFF
+@echo Client2
+@echo:
+javac ClientJoc.java
+java Client
+pause

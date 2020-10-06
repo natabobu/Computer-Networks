@@ -1,0 +1,6 @@
+@echo OFF
+@echo Ggrup
+@echo:
+javac Group.java
+java Group
+pause

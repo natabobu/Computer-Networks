@@ -1,0 +1,6 @@
+@echo OFF
+@echo Control
+@echo:
+javac Control.java
+java Control
+pause

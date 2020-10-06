@@ -1,0 +1,6 @@
+@echo OFF
+@echo Producator_consumator
+@echo:
+javac Producator_consumator.java
+java Producator_consumator
+pause

@@ -1,0 +1,6 @@
+@echo OFF
+@echo Creare_si_lansare
+@echo:
+javac Contro.java
+java Contro
+pause

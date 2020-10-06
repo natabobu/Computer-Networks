@@ -1,0 +1,6 @@
+@echo OFF
+@echo Gara
+@echo:
+javac TestGara.java
+java TestGara
+pause

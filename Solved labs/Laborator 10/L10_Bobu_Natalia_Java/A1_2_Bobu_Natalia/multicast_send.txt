@@ -1,0 +1,6 @@
+@echo OFF
+@echo Multicast_send
+@echo:
+javac MulticastSend.java
+java MulticastSend
+pause
