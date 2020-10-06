@@ -1,0 +1,92 @@
+# 
+# Purpose:   Contains IP address information for all active 
+#            interfaces in the current network model.
+#            (created by exporting this information from the model.)
+# 
+
+# Node Name: Campus Network.Router 1
+#  Iface Name            IP Address       Subnet Mask      Connected Link
+#  ----------            ---------------  ---------------  ----------------
+   IF0                      192.0.0.1        255.255.255.0    Campus Network.Net 10 <-> Router 1
+   IF1                      192.0.1.1        255.255.255.0    Campus Network.Net 11 <-> Router 1
+   IF10                     192.0.2.1        255.255.255.0    Campus Network.Router 1 <-> Router 3
+   IF11                     192.0.3.1        255.255.255.0    Campus Network.Router 1 <-> Router 2
+   LB0                      192.0.4.1        255.255.255.0    Not connected to any link.
+
+
+# Node Name: Campus Network.Net 10
+#  Iface Name            IP Address       Subnet Mask      Connected Link
+#  ----------            ---------------  ---------------  ----------------
+   IF0                      192.0.0.2        255.255.255.0    Campus Network.Net 10 <-> Router 1
+
+
+# Node Name: Campus Network.Net 11
+#  Iface Name            IP Address       Subnet Mask      Connected Link
+#  ----------            ---------------  ---------------  ----------------
+   IF0                      192.0.1.2        255.255.255.0    Campus Network.Net 11 <-> Router 1
+
+
+# Node Name: Campus Network.Router 2
+#  Iface Name            IP Address       Subnet Mask      Connected Link
+#  ----------            ---------------  ---------------  ----------------
+   IF0                      192.0.5.1        255.255.255.0    Campus Network.Net 12 <-> Router 2
+   IF1                      192.0.6.1        255.255.255.0    Campus Network.Net 13 <-> Router 2
+   IF10                     192.0.3.2        255.255.255.0    Campus Network.Router 1 <-> Router 2
+   IF11                     192.0.7.1        255.255.255.0    Campus Network.Router 2 <-> Router 4
+   LB0                      192.0.8.1        255.255.255.0    Not connected to any link.
+
+
+# Node Name: Campus Network.Net 12
+#  Iface Name            IP Address       Subnet Mask      Connected Link
+#  ----------            ---------------  ---------------  ----------------
+   IF0                      192.0.5.2        255.255.255.0    Campus Network.Net 12 <-> Router 2
+
+
+# Node Name: Campus Network.Net 13
+#  Iface Name            IP Address       Subnet Mask      Connected Link
+#  ----------            ---------------  ---------------  ----------------
+   IF0                      192.0.6.2        255.255.255.0    Campus Network.Net 13 <-> Router 2
+
+
+# Node Name: Campus Network.Router 3
+#  Iface Name            IP Address       Subnet Mask      Connected Link
+#  ----------            ---------------  ---------------  ----------------
+   IF0                      192.0.9.1        255.255.255.0    Campus Network.Net 14 <-> Router 3
+   IF1                      192.0.10.1       255.255.255.0    Campus Network.Net 15 <-> Router 3
+   IF10                     192.0.2.2        255.255.255.0    Campus Network.Router 1 <-> Router 3
+   IF11                     192.0.11.1       255.255.255.0    Campus Network.Router 4 <-> Router 3
+   LB0                      192.0.12.1       255.255.255.0    Not connected to any link.
+
+
+# Node Name: Campus Network.Net 14
+#  Iface Name            IP Address       Subnet Mask      Connected Link
+#  ----------            ---------------  ---------------  ----------------
+   IF0                      192.0.9.2        255.255.255.0    Campus Network.Net 14 <-> Router 3
+
+
+# Node Name: Campus Network.Net 15
+#  Iface Name            IP Address       Subnet Mask      Connected Link
+#  ----------            ---------------  ---------------  ----------------
+   IF0                      192.0.10.2       255.255.255.0    Campus Network.Net 15 <-> Router 3
+
+
+# Node Name: Campus Network.Router 4
+#  Iface Name            IP Address       Subnet Mask      Connected Link
+#  ----------            ---------------  ---------------  ----------------
+   IF0                      192.0.13.1       255.255.255.0    Campus Network.Net 16 <-> Router 4
+   IF1                      192.0.14.1       255.255.255.0    Campus Network.Net 17 <-> Router 4
+   IF10                     192.0.7.2        255.255.255.0    Campus Network.Router 2 <-> Router 4
+   IF11                     192.0.11.2       255.255.255.0    Campus Network.Router 4 <-> Router 3
+   LB0                      192.0.15.1       255.255.255.0    Not connected to any link.
+
+
+# Node Name: Campus Network.Net 16
+#  Iface Name            IP Address       Subnet Mask      Connected Link
+#  ----------            ---------------  ---------------  ----------------
+   IF0                      192.0.13.2       255.255.255.0    Campus Network.Net 16 <-> Router 4
+
+
+# Node Name: Campus Network.Net 17
+#  Iface Name            IP Address       Subnet Mask      Connected Link
+#  ----------            ---------------  ---------------  ----------------
+   IF0                      192.0.14.2       255.255.255.0    Campus Network.Net 17 <-> Router 4
