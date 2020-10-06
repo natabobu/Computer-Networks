@@ -1,0 +1,439 @@
+Window_Size_8K_WAN_Link_T1	1	0
+----------------- Static Environment Attribute Confirmations -----------------
+
+--------------------Name-------------------- --Source--- ------Value------
+ef                                           cmd line    TCP_Window_Size-Window_Size_8K_WAN_Link_T1-DES-1
+force_posix_locale                           default     TRUE
+handle_exception                             default     TRUE
+handle_exception_extended                    default     TRUE
+mem_clear                                    default     0
+mem_opt.compact_pools                        default     TRUE
+mem_opt.pool_small_blocks                    default     TRUE
+mem_opt.grow_pool_planks                     default     TRUE
+mem_optimize                                 default     TRUE
+mem_shred                                    default     FALSE
+mod_dirs                                     env. file   C:\Users\eochieng\op_models,
+                                                         "C:\\Users\\eochieng\\Desktop\\Univ_Program\\Modeler Academic Edition\\Tutorials\\TCP\\TCP_Windowing_Tutorial",
+                                                         "C:\\Users\\eochieng\\Desktop\\Univ_Program\\Modeler Academic Edition\\Tutorials\\TCP\\TCP_Windowing_Tutorial\\Solutions",
+                                                         "C:\\Users\\eochieng\\Desktop\\Univ_Program\\Modeler Academic Edition\\Tutorials\\TCP\\TCP_Windowing_Tutorial\\TCP_Lab_Files",
+                                                         "C:\\Riverbed EDU\\17.5.A\\sys\\lib",
+                                                         "C:\\Riverbed EDU\\17.5.A\\sys\\icons",
+                                                         "C:\\Riverbed EDU\\17.5.A\\sys\\images",
+                                                         "C:\\Riverbed EDU\\17.5.A\\sys\\include",
+                                                         "C:\\Riverbed EDU\\17.5.A\\sys\\images\\maps",
+                                                         "C:\\Riverbed EDU\\17.5.A\\sys\\configs",
+                                                         "C:\\Riverbed EDU\\17.5.A\\sys\\help",
+                                                         "C:\\Riverbed EDU\\17.5.A\\sys\\utilities",
+                                                         "C:\\Riverbed EDU\\17.5.A\\sys\\utilities\\3dnv",
+                                                         "C:\\Riverbed EDU\\17.5.A\\sys\\utilities\\tmm",
+                                                         "C:\\Riverbed EDU\\17.5.A\\sys\\utilities\\hla",
+                                                         "C:\\Riverbed EDU\\17.5.A\\sys\\utilities\\sitl",
+                                                         "C:\\Riverbed EDU\\17.5.A\\sys\\reports\\stylesheets",
+                                                         C:\Users\eochieng\op_admin\ace_logs,
+                                                         C:\Users\eochieng\op_admin\rmc\logs,
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\3dnv_examples",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\advisories",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\advisories\\Advisory_Logs",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\applications",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\atm",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\atv",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\base",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\bgp",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\bridges",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\cyber",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\demands",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\dhcp",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\eigrp",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\ethcoax",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\ethernet",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\example_networks",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\example_networks\\configs",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\example_networks\\configs\\baseline",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\example_networks\\configs\\baseline_no_unnum_links",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\example_networks\\configs\\with_areas_bad_abr",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\example_networks\\configs\\with_areas_broken",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\example_networks\\configs\\with_areas_good_abr",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\example_networks\\configs\\with_areas_good_summ",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\example_networks\\RIB",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\example_networks\\Security_Analysis",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\example_networks\\Security_Analysis\\Baseline",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\example_networks\\traffic",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\example_networks\\traffic\\one_time_period",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\example_networks\\traffic\\time_varying",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\example_networks\\web_reports",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\fc",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\fddi",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\frelay",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\gdc",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\h323",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\haipe",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\icons",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\igrp",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\ike",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\include",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\inet",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\ip",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\ip\\ipv6_readiness",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\ip\\ipv6_readiness\\en_US",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\ip\\utilities",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\isis",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\jammers",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\l2tp",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\lane",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\lapb",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\layer2_mss",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\legacy",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\links",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\llm",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\lte",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\mainframe",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\mainframe\\Excel",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\mainframe\\SAS",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\mainframe\\SAS\\MXG",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\mainframe\\SAS\\NeuMICS",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\manet",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\mobile_ip",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\mpls",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\msdp",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\ospf",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\pnni",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\pricing",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\pricing\\utilities",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\pstn",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\rip",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\rohc",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\rrp",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\rsvp",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\rtp",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\servers",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\servers\\agents",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\servers\\agents\\BMC",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\servers\\agents\\BMC\\nt",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\servers\\agents\\BMC\\unix",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\servers\\agents\\NetIQ",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\servers\\agents\\NetIQ\\4.0",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\servers\\agents\\NetIQ\\5.0",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\servers\\agents\\OpenView",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\servers\\agents\\OpenView\\nt",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\servers\\agents\\OpenView\\unix",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\servers\\agents\\Perfmon",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\sip",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\sna",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\srp",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\tcp",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\tdma",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\tpal",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\tr",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\traf_gen",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\tutorial_req",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\tutorial_req\\basic",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\tutorial_req\\basic\\traffic",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\tutorial_req\\modeler",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\umts",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\utilities",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\utilities\\common",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\utilities\\ctr",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\utilities\\ctr\\des_profiles",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\utilities\\ctr\\en_US",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\utilities\\ctr\\ext",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\utilities\\ctr\\profiles",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\utilities\\design",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\utilities\\design\\base",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\utilities\\design\\igp_te",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\utilities\\design\\lfa",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\utilities\\design\\mpls",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\utilities\\design\\mpls_qp",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\utilities\\design\\mpls_te",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\utilities\\design\\pstn",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\utilities\\design\\topo",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\utilities\\device_creator",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\utilities\\device_creator\\generic",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\utilities\\device_creator\\vendor",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\utilities\\flowan",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\utilities\\flowan\\capplan",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\utilities\\flowan\\failure_impact_analysis",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\utilities\\flowan\\ipv6",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\utilities\\flowan\\voip",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\utilities\\groups",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\utilities\\import",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\utilities\\import\\ai",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\utilities\\import\\csv",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\utilities\\import\\csv\\config",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\utilities\\import\\csv\\interface_naming_rules",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\utilities\\import\\imex_dste",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\utilities\\import\\rci",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\utilities\\import\\vnes",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\utilities\\inv",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\utilities\\inv\\en_US",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\utilities\\mcr",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\utilities\\mcr\\en_US",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\utilities\\netdiff",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\utilities\\netdiff\\config_file_diff_css",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\utilities\\netdoctor",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\utilities\\netdoctor\\en_US",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\utilities\\netmapper",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\utilities\\netone",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\utilities\\odb_vis",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\utilities\\oms",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\utilities\\oms\\bgp",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\utilities\\oms\\ets",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\utilities\\oms\\ets\\base",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\utilities\\oms\\ets\\conn",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\utilities\\oms\\peer",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\utilities\\oms\\svc",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\utilities\\osc",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\utilities\\osc\\en_US",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\utilities\\packet_analyzer",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\utilities\\pnm",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\utilities\\port_scan",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\utilities\\udr",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\utilities\\views",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\utilities\\vni",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\voice",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\web_reports",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\wimax",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\wireless",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\wireless\\smac",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\wireless\\wireless_wizard",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\wireless\\wrls_phy_mpath_data_files",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\wireless_lan",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\x25",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\xdsl",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\std\\zigbee",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\vendor_models\\3Com",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\vendor_models\\Alcatel_Lucent",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\vendor_models\\Alteon",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\vendor_models\\AMD",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\vendor_models\\antenna_models",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\vendor_models\\Ascend",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\vendor_models\\Avici",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\vendor_models\\Bay_Networks",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\vendor_models\\Brocade",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\vendor_models\\Cabletron",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\vendor_models\\CheckPoint",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\vendor_models\\Cisco_Systems",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\vendor_models\\Compaq",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\vendor_models\\Coyote_Point",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\vendor_models\\Dell",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\vendor_models\\Equipe",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\vendor_models\\Extreme",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\vendor_models\\f5",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\vendor_models\\Fore_Systems",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\vendor_models\\Foundry_Networks",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\vendor_models\\Hewlett_Packard",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\vendor_models\\Huawei",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\vendor_models\\IBM",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\vendor_models\\Intel",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\vendor_models\\Juniper_Networks",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\vendor_models\\Lucent",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\vendor_models\\McData",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\vendor_models\\Nec",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\vendor_models\\NET",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\vendor_models\\Newbridge",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\vendor_models\\Nokia",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\vendor_models\\Nortel",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\vendor_models\\Radware",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\vendor_models\\Sun",
+                                                         "C:\\Riverbed EDU\\17.5.A\\models\\vendor_models\\Xylan"
+tfile_dir_cache_file                         default     opnet_dir_cache
+tfile_dir_cache                              default     use
+noprompt                                     cmd line    TRUE
+opnet_dir                                    env. file   "C:\\Riverbed EDU"
+opnet_user_home                              shell var   C:\Users\eochieng
+preferences_default_save_location            env. file   Local
+verbose_session_log                          default     FALSE
+java_prog                                    config file "C:\\Riverbed EDU\\17.5.A\\jre7_modeler_ae\\JRE\\bin\\java.exe"
+java_prog64                                  default     java
+3dnv                                         default     FALSE
+3dnv.cleanup_at_the_end                      default     TRUE
+3dnv.fed_file_name                           default     <null>
+3dnv.federation_name                         default     OPNET_3DNV
+3dnv.history_file                            default     <null>
+3dnv.hla_standard                            default     "DOD 1.3"
+3dnv.initialization_delay                    default     1
+3dnv.mapping_argument                        default     <null>
+3dnv.mapping_library                         default     opnet_3dnv_default_mapping
+3dnv.max_request_rate                        default     0
+3dnv.rpr_fom_version                         default     1
+anim_attempts                                default     5
+anim_hist                                    default     <null>
+anim_host                                    default     localhost
+anim_port                                    default     0
+anim_timeout                                 default     3
+anim_view                                    env. file   FALSE
+antenna.spherical_model                      default     Mathematical
+attr_reqs_file                               default     <null>
+auto_disk_space_threshold                    default     1000
+automation_lock_max_wait_time                default     60
+beep_count_confirm                           default     1
+beep_count_error                             default     2
+bind_shobj_flags                             default     <null>
+bind_shobj_flags_32bit                       default     <null>
+bind_shobj_flags_64bit                       default     <null>
+bind_shobj_flags_devel                       default     /DEBUG
+bind_shobj_flags_optim                       default     <null>
+bind_shobj_libs                              default     <null>
+bind_shobj_libs_32bit                        default     <null>
+bind_shobj_libs_64bit                        default     <null>
+bind_shobj_libs_devel                        default     <null>
+bind_shobj_libs_optim                        default     <null>
+bind_shobj_prog                              default     bind_so_msvc
+check_newer_process_model_files              default     TRUE
+comp.no_fin_required_for_state_vars          default     FALSE
+comp_flags_32bit                             default     <null>
+comp_flags_64bit                             default     /GS-
+comp_flags_c++_specific                      default     <null>
+comp_flags_c_specific                        default     <null>
+comp_flags_common                            env. file   "/W3 /D_CRT_SECURE_NO_DEPRECATE /IC:\\RIVERB~1\\175~1.A\\models\\std\\include"
+comp_flags_devel                             default     "/Z7 /Od"
+comp_flags_mt                                default     <null>
+comp_flags_optim                             default     "/Ox /Ob2 /DOPD_NO_DEBUG /DOPD_INLINE_KPS"
+comp_globals_export                          default     FALSE
+comp_object_files_without_source             default     allow_with_warning
+comp_per_process_errors                      default     TRUE
+comp_prog                                    default     comp_msvc
+comp_prog_cpp                                default     comp_msvc
+comp_trace_info                              env. file   kernel-based
+console_exit_pause                           default     FALSE
+cosim                                        default     <null>
+cosimulation_optimization_mode               default     none
+debug_mk                                     default     FALSE
+default_site_position_cache_time_granularity env. file   0
+des.log_severity_filter                      env. file   -1
+diag_enable                                  default     FALSE
+display_timezone_string                      default     FALSE
+duration                                     env. file   3600
+edit_lock_mode                               default     FALSE
+endsim_memstats                              default     FALSE
+etrace_diff                                  default     <null>
+etrace_dump                                  default     <null>
+etrace_end_time                              default     1e+100
+etrace_start_time                            default     0
+event_order_method                           default     strict
+event_speed_parameter                        default     100000
+file_read_abort_suppress                     default     FALSE
+format_event_ids_with_1000s_separator        default     TRUE
+format_ici_ids_with_1000s_separator          default     TRUE
+format_object_ids_with_1000s_separator       default     TRUE
+format_packet_ids_with_1000s_separator       default     TRUE
+format_process_ids_with_1000s_separator      default     TRUE
+fully_serialized_event_execution_ids         default     TRUE
+fully_serialized_ici_ids                     default     TRUE
+fully_serialized_packet_ids                  default     TRUE
+geocentric_model                             default     right_sphere
+invalid_link_notification                    default     TRUE
+kernel_type                                  env. file   optimized
+license_broker_host                          default     <null>
+license_broker_port                          default     <null>
+license_expiration_warning_interval          default     3
+license_group                                default     <null>
+license_http_proxy_password                  default     <not set>
+license_http_proxy_port                      default     80
+license_http_proxy_server                    default     <null>
+license_http_proxy_user                      default     <null>
+license_http_server                          default     license01.opnet.com
+license_http_use_proxy                       default     FALSE
+license_password                             default     <not set>
+license_port                                 default     port_a
+license_server                               default     localhost
+license_server_standalone                    default     FALSE
+license_server_standalone_diagnose           default     FALSE
+license_username                             default     <null>
+livelock_thresh                              default     8192
+log_endsim_perf                              env. file   TRUE
+log_file                                     env. file   TCP_Window_Size-Window_Size_8K_WAN_Link_T1-DES-1
+log_time_precision                           default     12
+manage_loanable_licenses                     default     FALSE
+max_idle_time_microseconds                   default     1
+max_log_entries                              env. file   200
+memstat_autogen                              default     <null>
+mtn_warn_int                                 default     3
+named_locks                                  default     FALSE
+net_name                                     cmd line    TCP_Window_Size-Window_Size_8K_WAN_Link_T1
+num_collect_values                           env. file   100
+num_err                                      default     10
+ot_file                                      env. file   TCP_Window_Size-Window_Size_8K_WAN_Link_T1-DES-1
+ot_file.default_format                       default     write_many
+ot_mem_size                                  default     4
+ov_autogen                                   default     <null>
+ov_diff_tolerance                            default     5
+ov_file                                      env. file   TCP_Window_Size-Window_Size_8K_WAN_Link_T1-DES-1
+ov_mem_size                                  default     16
+parallel_sim.event_execution_time_window     env. file   0
+parallel_sim.mutex_rank_ignore               default     FALSE
+per_module_random_stream                     default     FALSE
+probe                                        env. file   TCP_Window_Size-Window_Size_8K_WAN_Link_T1
+probe_error_enable                           default     FALSE
+probe_start_time                             default     -1
+probe_stop_time                              default     -1
+prof_output                                  default     console
+prof_output_separator                        default     <null>
+prof_track_func                              default     <null>
+prof_track_recurse                           default     TRUE
+psnone_tda.bu.closure.closure                default     TRUE
+psnone_tda.bu.collision.num_colls            default     0
+psnone_tda.bu.ecc.pk_accept                  default     TRUE
+psnone_tda.bu.error.num_errors               default     0
+psnone_tda.bu.propdel.prop_delay             default     0
+psnone_tda.bu.txdel.tx_delay                 default     0
+psnone_tda.pt.ecc.pk_accept                  default     TRUE
+psnone_tda.pt.error.num_errors               default     0
+psnone_tda.pt.propdel.prop_delay             default     0
+psnone_tda.pt.txdel.tx_delay                 default     0
+psnone_tda.ra.ber.ber                        default     0
+psnone_tda.ra.bkgnoise.bkgnoise              default     0
+psnone_tda.ra.chanmatch.match_status         default     valid
+psnone_tda.ra.closure.closure                default     TRUE
+psnone_tda.ra.ecc.pk_accept                  default     TRUE
+psnone_tda.ra.error.actual_ber               default     0
+psnone_tda.ra.error.num_errors               default     0
+psnone_tda.ra.power.rcvd_power               default     -1
+psnone_tda.ra.propdel.end_propdel            default     0
+psnone_tda.ra.propdel.start_propdel          default     0
+psnone_tda.ra.ragain.rx_gain                 default     0
+psnone_tda.ra.snr.snr                        default     1000
+psnone_tda.ra.tagain.tx_gain                 default     0
+psnone_tda.ra.txdel.tx_delay                 default     0
+radio_transmission_defer_packet_duplication  default     TRUE
+radio_transmission_on_demand_receiver_groups default     FALSE
+rand_gen_type                                default     Linear-Congruential
+rand_num_ext_res                             default     TRUE
+raw_err                                      default     FALSE
+realtime_ratio                               env. file   0
+rec_err_suppress                             default     FALSE
+record_gstats                                default     FALSE
+repositories                                 env. file   stdmod
+script_mode                                  default     none
+script_name                                  default     odb_script
+seed                                         env. file   128
+sim_packet_sharing                           env. file   conservative
+sim_process_priority                         default     normal
+sim_time_quantum                             env. file   0
+site_position_cache_size                     env. file   3
+sitl_realtime_ratio_check                    default     TRUE
+sla_compute_all_violations                   default     FALSE
+split_start_radio_transmission               default     FALSE
+timezone                                     default     "Local Timezone"
+tmm_data_directory                           default     <obsolete>
+tmm_data_type                                default     "USGS DEM"
+tmm_display_degrees                          default     FALSE
+tmm_include_antenna_height                   default     FALSE
+tmm_load_as_needed                           default     TRUE
+tmm_pathloss_cache_size                      default     2
+tmm_prop_model                               default     <null>
+tmm_prop_param                               default     <null>
+tmm_propagation_specification                default     <null>
+tmm_propagation_zone_ratio                   default     0
+tmm_propagation_zone_resolution              default     100
+tmm_simulate                                 env. file   FALSE
+tmm_terrain_cache_size                       default     10
+tmm_terrain_specification                    default     <null>
+tmm_use_cache                                default     TRUE
+tmm_verbose                                  default     FALSE
+update_interval                              env. file   100000
+updates_in_seconds                           default     FALSE
+user_lock_devname                            default     <null>
+verbose_load                                 env. file   TRUE
+verbose_mk                                   default     FALSE
+verbose_sim                                  env. file   TRUE
+warning_suppress                             default     FALSE
