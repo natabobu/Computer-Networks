@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head><meta http-equiv=Content-Type content='text/html; charset=UTF-8'>
+
+  <title>what's RIP</title>
+           
+  <style>
+<!--
+A:link {
+ color:black
+}
+A:visited {
+ color:black
+}
+A:active {
+ color:gray
+}
+A:hover {
+ text-decoration:underline;
+}
+A {
+ text-decoration:none
+}
+-->
+
+</style>
+</head>
+  <body style="margin-top: 5px; margin-right: 15px; margin-bottom: 5px; margin-left: 15px; " text=#000000 bgcolor="#ffffff" background="bg-ya4.gif" tppabs="http://nislab.bu.edu/sc546/sc546Fall2002/RIP2/RIP/pics/bg-ya4.gif">
+
+<img src="what.gif" tppabs="http://nislab.bu.edu/sc546/sc546Fall2002/RIP2/RIP/pics/what.gif" alt="What's RIP" border=0 width=434 hight=58 hspace=0>
+<table width="90%">
+  <tbody>
+    <tr>
+      <td><font color="#ffffff">...................................................................................................................................................................................</font><br>
+      <center>
+      <table width="90%">
+        <tbody>
+          <tr>
+            <td>
+            <h2><a name="his"><img src="li.gif" tppabs="http://nislab.bu.edu/sc546/sc546Fall2002/RIP2/RIP/pics/li.gif" width=30 hight=30 hspace=2 border=0><font color=#2e2e00>History</font></a>
+            </h2>
+       The Routing Information Protocol (RIP) was one of the earliest intra-AS 
+Internet routing protocols and is still in widespread use today. It traces 
+its origins and its name to the Xerox Network Systems (XNS ) architecture. 
+The widespread deployment of RIP was due in great part to its inclusion in 
+1982 of the Berkeley Software Distribution (BSD) version of UNIX supporting 
+TCP/IP. RIP version 1 is defined in RFC 1058, with a backward- compatible 
+ver.2 defined in RFC 2453. <br>
+            <br>
+            <h2><a name="DV"><img src="li.gif" tppabs="http://nislab.bu.edu/sc546/sc546Fall2002/RIP2/RIP/pics/li.gif" width=30 hight=30 hspace=2 border=0><font color=#2e2e00>Distance Vector Routing Algorithm</font></a>
+            </h2>
+   Now recall the distance vector (DV), and look at its features.<br>
+  DV algorithm is iterative, asynchronous and distributed one;          
+    
+            <ul>
+              <li>It is distributed in that each node receives some information
+from one or more of its directly attached neighbors performs a calculation,
+and may then distribute the results of its calculation back to its neighbors.
+              </li>
+              <li>It is iterative in that this process continues on until 
+no more information is exchanged between neighbors. </li>
+              <li>This algorithm is asynchronous in that it does not require 
+all of the nodes to operate in lockstep with each other.  </li>
+            </ul>
+            <h2><a name="RIP"><img src="li.gif" tppabs="http://nislab.bu.edu/sc546/sc546Fall2002/RIP2/RIP/pics/li.gif" width=30 hight=30 hspace=2 border=0><font color=#2e2e00>Main Features of RIP</font></a>
+            </h2>
+        RIP is a <b><font color="#ff0000">Distance Vector protocol</font></b>
+  that operates in a manner very close to the idealized protocol, which allows 
+neighboring routers to exchange the routing information with each other. The
+features of RIP are as follows;                
+            <ul>
+              <li>RIP for IPv4 ; RFC 1058/1721/1722/1723/1724  </li>
+              <li>RIP for IPv6 ; RFC 2080  </li>
+              <li>Routed in BSD, SunOS  </li>
+              <li>Maximum hopping; 15  </li>
+              <li>Cold-Start ; It takes at most 450s(=15x30 ) for calculate. 
+ </li>
+              <li>Exchange Distance Vector database (routing table) information 
+every 30 sec.( using UDP port 520)<br>
+  -&gt;transfer about the condition change of node/link </li>
+              <li>If there is no response for 180 sec, the network is down 
+(keep-alive)    </li>
+            </ul>
+            <center>
+            <table border="1" bgcolor="#efffff">
+              <tbody>
+                <tr>
+                  <td> Expression for Minimum Distance Path; <br>
+  	D(i,j) ; distance vector <br>
+  	d(i,j) ; distance between node_i and node_j<br>
+   	D(i,j) = min [d(i,k) + D(k,j)] (for all k) <br>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            </center>
+            <h2><a name="BF"><img src="li.gif" tppabs="http://nislab.bu.edu/sc546/sc546Fall2002/RIP2/RIP/pics/li.gif" width=30 hight=30 hspace=2 border=0><font color=#2e2e00>Bellman-Ford's Algorithm (Mathematical Approach)</font></a>
+            </h2>
+   Bellman-Ford's algorithm was developed by Xerox-PARC as XNS-RIP. It defines 
+the optimum path to the destination; minimum distance and attribute distance 
+vector information. This algorithm is <i>mathematically</i> expressed as following
+table.<br>
+            <br>
+            <center>
+            <table border="1" bgcolor="#efffff">
+              <tbody>
+                <tr>
+                  <td><img src="bf.jpg" tppabs="http://nislab.bu.edu/sc546/sc546Fall2002/RIP2/RIP/pics/bf.jpg" alt="Bellman-Ford" border="0" hspace="0">
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            <br>
+   ||<a href="01.html" tppabs="http://nislab.bu.edu/sc546/sc546Fall2002/RIP2/RIP/01.html">Prev</a>
+ ||<a href="03.html" tppabs="http://nislab.bu.edu/sc546/sc546Fall2002/RIP2/RIP/03.html">Next</a>
+ ||  </center>
+            <br>
+            <br>
+            <hr width="50%"><br>
+            <br>
+            <center> (c) Marcos Andres Diaz &amp; Yasuko Iwai<br>
+            <a href="javascript:if(confirm('http://www.bu.edu/eng/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?'))window.location='http://www.bu.edu/eng/'" tppabs="http://www.bu.edu/eng/" target="_top">Boston University,
+College of Engineering</a>
+            <center></center>
+            </center>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <img src="ya.gif" tppabs="http://nislab.bu.edu/sc546/sc546Fall2002/RIP2/RIP/pics/ya.gif" align="Right">
+      </center>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

@@ -1,0 +1,350 @@
+
+<html>
+<head><meta http-equiv=Content-Type content='text/html; charset=UTF-8'>
+
+
+<title>about this website</title>
+
+<style>
+<!--
+A:link {
+ color:black
+}
+A:visited {
+ color:black
+}
+A:active {
+ color:gray
+}
+A:hover {
+ text-decoration:underline;
+}
+A {
+ text-decoration:none
+}
+-->
+
+</STYLE>
+
+</head>
+
+<body style="margin: 5px 15px 5px 15px" text=#000000 bgcolor=#FFFFFF background="bg-ya4.gif" tppabs="http://nislab.bu.edu/sc546/sc546Fall2002/RIP2/RIP/pics/bg-ya4.gif">
+
+
+<img src="background.gif" tppabs="http://nislab.bu.edu/sc546/sc546Fall2002/RIP2/RIP/pics/background.gif" alt="background" border=0 width=434 hight=58 hspace=0>
+
+
+<table width=90%>
+<tr>
+<td><font color=#FFFFFF>...................................................................................................................................................................................</font><br>
+
+<center>
+<table width=90%><tr><td>
+
+<h2><a name="RNM"><img src="li.gif" tppabs="http://nislab.bu.edu/sc546/sc546Fall2002/RIP2/RIP/pics/li.gif" width=30 hight=30 hspace=4 border=0><font color=#2e2e00>Rutarea ca Management al Retelei</font></a></h2>
+     O dezvoltare recenta a retelelor de calculatoare si indespensabilitatea lor in viata noastra, devine mai importanta pentru a servi reteaua; in special pentru a mentine reteaua si pentru a rula. De exemplu, administratorul de retea, a carui ocupatie este de a tine reteaua disponibila, trebuie sa fie capabil sa raspunda diferitelor greseli oricand. Deci, este important sa realizam controlul dinamic al retelei pentru a controla disponibiltatea retelei. In acest studiu, noi am analizat unul dintre cele mai populare protocoale de rutare dinamica de cost minim, RIP (Routing Information Protocol) si algoritmul sau.  
+    <!--As recent development of computer networks and its indispensability of our life, it becomes more important to manage the network; especially to keep the network 'up and running' However, keeping its availability by human's routing control (statistic control) impose us on so complicated operations. For instance, the network administrator, whose job it is to keep the network available, must be able to respond to variable mishaps at any time. So, it is important to realize the computer based routing control (dynamic control) of network routing for network availability control. In this study, we have analyzed one of the most popular least-cost dynamic routing protocol, RIP (Routing Information Protocol) and its algorithm, and assumed the merit and demerit of this protocol by building RIP simulation program and executing the one.
+-->
+<br><br>
+
+<h2><a name="DRP"><img src="li.gif" tppabs="http://nislab.bu.edu/sc546/sc546Fall2002/RIP2/RIP/pics/li.gif" width=30 hight=30 hspace=4 border=0><font color=#2e2e00>Protocolul Dinamic de Rutare</font></a></h2>
+
+Protocoalele de rutare dinamica se impart in urmatoarele categorii:<br>
+<ul>
+<li><b>Rutare Unicast </b>
+<ul>
+<li> IGP (Interior Gateway Protocol) 
+<ul>
+<li> <b><font color=#FF0000>RIP (Routing Information Protocol)</font> </b>
+<li>  OSPF (Open Shortest Path First) 
+</ul>
+<li>  EGP (Exterior Gateway Protocol) 
+<ul>
+<li>  BGP4 (Border Gateway Protocol version 4) 
+</ul>
+</ul>
+
+<li><b>Rutare Multicast </b>
+<ul>
+<li>   DVMRP (Distance Vector Multicast Routing Protocol) 
+<li>  MOSPF (Multicast OSPF) 
+<li>  PIM (Protocol Independent Multicast protocol) 
+<li>  MBGP (Multicast BGP) 
+</ul>
+</ul>
+<!--Depending on network topology, the size of communication area, the way to calculate the shortest paths, and so on, dynamic routing algorithms are categorized into four main types:
+-->
+Depinzand de topologia de retea, de dimensiunea suprafetei de comunicare, de modul de calculare a cailor cele mai scurte si asa mai departe, algoritmii de rutare dinamica se impart in patru categorii principale: 
+<ol>
+<ol>
+<li><b><font color=#FF0000>Distance Vector Algorithm (DV)</font> </b>
+<li>Link State (LS)
+<li>Path Vector (PV)
+<li>Source Routing
+</ol>
+</ol>
+
+<!--The matching table of each routing protocols and algorithms are summarized in the following one.-->
+Tabelul protocoalelor de rutare si algoritmii corespunzatori <br><br>
+
+<center>
+
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=486
+ style='width:364.5pt;mso-cellspacing:0in;mso-padding-alt:0in 0in 0in 0in'>
+ <tr style='mso-yfti-irow:0;height:32.25pt'>
+  <td width=82 valign=top style='width:61.5pt;border-top:2.25pt;border-left:
+  2.25pt;border-bottom:1.0pt;border-right:1.0pt;border-color:black;border-style:
+  solid;padding:0in 0in 0in 0in;height:32.25pt'>
+  <p class=MsoNormal><b>Tip Rutare</b><o:p></o:p></p>
+  </td>
+  <td width=82 valign=top style='width:61.5pt;border:solid black 1.0pt;
+  border-top:solid black 2.25pt;padding:0in 0in 0in 0in;height:32.25pt'>
+  <p class=MsoNormal>DV<o:p></o:p></p>
+  </td>
+  <td width=82 valign=top style='width:61.5pt;border:solid black 1.0pt;
+  border-top:solid black 2.25pt;padding:0in 0in 0in 0in;height:32.25pt'>
+  <p class=MsoNormal>LS<o:p></o:p></p>
+  </td>
+  <td width=82 valign=top style='width:61.5pt;border:solid black 1.0pt;
+  border-top:solid black 2.25pt;padding:0in 0in 0in 0in;height:32.25pt'>
+  <p class=MsoNormal>PV<o:p></o:p></p>
+  </td>
+  <td width=82 valign=top style='width:61.5pt;border:solid black 1.0pt;
+  border-top:solid black 2.25pt;padding:0in 0in 0in 0in;height:32.25pt'>
+  <p class=MsoNormal>Obiect<o:p></o:p></p>
+  </td>
+  <td width=82 valign=top style='width:61.5pt;border-top:2.25pt;border-left:
+  1.0pt;border-bottom:1.0pt;border-right:2.25pt;border-color:black;border-style:
+  solid;padding:0in 0in 0in 0in;height:32.25pt'>
+  <p class=MsoNormal>IPv6<o:p></o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;height:18.75pt'>
+  <td width=82 valign=top style='width:61.5pt;border:solid black 1.0pt;
+  border-left:solid black 2.25pt;padding:0in 0in 0in 0in;height:18.75pt'>
+  <p class=MsoNormal>RIP<o:p></o:p></p>
+  </td>
+  <td width=82 valign=top style='width:61.5pt;border:solid black 1.0pt;
+  padding:0in 0in 0in 0in;height:18.75pt'>
+  <p class=MsoNormal>Da<o:p></o:p></p>
+  </td>
+  <td width=82 valign=top style='width:61.5pt;border:solid black 1.0pt;
+  padding:0in 0in 0in 0in;height:18.75pt'>
+  <p class=MsoNormal>&nbsp;<o:p></o:p></p>
+  </td>
+  <td width=82 valign=top style='width:61.5pt;border:solid black 1.0pt;
+  padding:0in 0in 0in 0in;height:18.75pt'>
+  <p class=MsoNormal>&nbsp;<o:p></o:p></p>
+  </td>
+  <td width=82 valign=top style='width:61.5pt;border:solid black 1.0pt;
+  padding:0in 0in 0in 0in;height:18.75pt'>
+  <p class=MsoNormal>Routed<o:p></o:p></p>
+  </td>
+  <td width=82 valign=top style='width:61.5pt;border:solid black 1.0pt;
+  border-right:solid black 2.25pt;padding:0in 0in 0in 0in;height:18.75pt'>
+  <p class=MsoNormal>RIPng<o:p></o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2;height:18.75pt'>
+  <td width=82 valign=top style='width:61.5pt;border:solid black 1.0pt;
+  border-left:solid black 2.25pt;padding:0in 0in 0in 0in;height:18.75pt'>
+  <p class=MsoNormal>OSPF<o:p></o:p></p>
+  </td>
+  <td width=82 valign=top style='width:61.5pt;border:solid black 1.0pt;
+  padding:0in 0in 0in 0in;height:18.75pt'>
+  <p class=MsoNormal>&nbsp;<o:p></o:p></p>
+  </td>
+  <td width=82 valign=top style='width:61.5pt;border:solid black 1.0pt;
+  padding:0in 0in 0in 0in;height:18.75pt'>
+  <p class=MsoNormal>Da<o:p></o:p></p>
+  </td>
+  <td width=82 valign=top style='width:61.5pt;border:solid black 1.0pt;
+  padding:0in 0in 0in 0in;height:18.75pt'>
+  <p class=MsoNormal>&nbsp;<o:p></o:p></p>
+  </td>
+  <td width=82 valign=top style='width:61.5pt;border:solid black 1.0pt;
+  padding:0in 0in 0in 0in;height:18.75pt'>
+  <p class=MsoNormal>Gated<o:p></o:p></p>
+  </td>
+  <td width=82 valign=top style='width:61.5pt;border:solid black 1.0pt;
+  border-right:solid black 2.25pt;padding:0in 0in 0in 0in;height:18.75pt'>
+  <p class=MsoNormal>OSPFv6<o:p></o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3;height:18.75pt'>
+  <td width=82 valign=top style='width:61.5pt;border:solid black 1.0pt;
+  border-left:solid black 2.25pt;padding:0in 0in 0in 0in;height:18.75pt'>
+  <p class=MsoNormal>BGP4<o:p></o:p></p>
+  </td>
+  <td width=82 valign=top style='width:61.5pt;border:solid black 1.0pt;
+  padding:0in 0in 0in 0in;height:18.75pt'>
+  <p class=MsoNormal>&nbsp;<o:p></o:p></p>
+  </td>
+  <td width=82 valign=top style='width:61.5pt;border:solid black 1.0pt;
+  padding:0in 0in 0in 0in;height:18.75pt'>
+  <p class=MsoNormal>&nbsp;<o:p></o:p></p>
+  </td>
+  <td width=82 valign=top style='width:61.5pt;border:solid black 1.0pt;
+  padding:0in 0in 0in 0in;height:18.75pt'>
+  <p class=MsoNormal>Da<o:p></o:p></p>
+  </td>
+  <td width=82 valign=top style='width:61.5pt;border:solid black 1.0pt;
+  padding:0in 0in 0in 0in;height:18.75pt'>
+  <p class=MsoNormal>Gated <o:p></o:p></p>
+  </td>
+  <td width=82 valign=top style='width:61.5pt;border:solid black 1.0pt;
+  border-right:solid black 2.25pt;padding:0in 0in 0in 0in;height:18.75pt'>
+  <p class=MsoNormal>BGP4+<o:p></o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4;height:18.75pt'>
+  <td width=82 valign=top style='width:61.5pt;border:solid black 1.0pt;
+  border-left:solid black 2.25pt;padding:0in 0in 0in 0in;height:18.75pt'>
+  <p class=MsoNormal>DVMRP<o:p></o:p></p>
+  </td>
+  <td width=82 valign=top style='width:61.5pt;border:solid black 1.0pt;
+  padding:0in 0in 0in 0in;height:18.75pt'>
+  <p class=MsoNormal>Da<o:p></o:p></p>
+  </td>
+  <td width=82 valign=top style='width:61.5pt;border:solid black 1.0pt;
+  padding:0in 0in 0in 0in;height:18.75pt'>
+  <p class=MsoNormal>&nbsp;<o:p></o:p></p>
+  </td>
+  <td width=82 valign=top style='width:61.5pt;border:solid black 1.0pt;
+  padding:0in 0in 0in 0in;height:18.75pt'>
+  <p class=MsoNormal>&nbsp;<o:p></o:p></p>
+  </td>
+  <td width=82 valign=top style='width:61.5pt;border:solid black 1.0pt;
+  padding:0in 0in 0in 0in;height:18.75pt'>
+  <p class=MsoNormal>mrouted<o:p></o:p></p>
+  </td>
+  <td width=82 valign=top style='width:61.5pt;border:solid black 1.0pt;
+  border-right:solid black 2.25pt;padding:0in 0in 0in 0in;height:18.75pt'>
+  <p class=MsoNormal><span style='mso-spacerun:yes'> </span><span lang=ZH-CN
+  style='font-family:SimSun;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+  "Times New Roman"'>&#65293;</span><o:p></o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5;height:18.75pt'>
+  <td width=82 valign=top style='width:61.5pt;border:solid black 1.0pt;
+  border-left:solid black 2.25pt;padding:0in 0in 0in 0in;height:18.75pt'>
+  <p class=MsoNormal>MOSPF<o:p></o:p></p>
+  </td>
+  <td width=82 valign=top style='width:61.5pt;border:solid black 1.0pt;
+  padding:0in 0in 0in 0in;height:18.75pt'>
+  <p class=MsoNormal>&nbsp;<o:p></o:p></p>
+  </td>
+  <td width=82 valign=top style='width:61.5pt;border:solid black 1.0pt;
+  padding:0in 0in 0in 0in;height:18.75pt'>
+  <p class=MsoNormal>Da<o:p></o:p></p>
+  </td>
+  <td width=82 valign=top style='width:61.5pt;border:solid black 1.0pt;
+  padding:0in 0in 0in 0in;height:18.75pt'>
+  <p class=MsoNormal>&nbsp;<o:p></o:p></p>
+  </td>
+  <td width=82 valign=top style='width:61.5pt;border:solid black 1.0pt;
+  padding:0in 0in 0in 0in;height:18.75pt'>
+  <p class=MsoNormal><span lang=ZH-CN style='font-family:SimSun;mso-ascii-font-family:
+  "Times New Roman";mso-hansi-font-family:"Times New Roman"'>&#12288;&#65293;</span><o:p></o:p></p>
+  </td>
+  <td width=82 valign=top style='width:61.5pt;border:solid black 1.0pt;
+  border-right:solid black 2.25pt;padding:0in 0in 0in 0in;height:18.75pt'>
+  <p class=MsoNormal><span lang=ZH-CN style='font-family:SimSun;mso-ascii-font-family:
+  "Times New Roman";mso-hansi-font-family:"Times New Roman"'>&#12288;&#65293;</span><o:p></o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6;height:18.75pt'>
+  <td width=82 valign=top style='width:61.5pt;border:solid black 1.0pt;
+  border-left:solid black 2.25pt;padding:0in 0in 0in 0in;height:18.75pt'>
+  <p class=MsoNormal>PIM<o:p></o:p></p>
+  </td>
+  <td width=82 valign=top style='width:61.5pt;border:solid black 1.0pt;
+  padding:0in 0in 0in 0in;height:18.75pt'>
+  <p class=MsoNormal>n/a<o:p></o:p></p>
+  </td>
+  <td width=82 valign=top style='width:61.5pt;border:solid black 1.0pt;
+  padding:0in 0in 0in 0in;height:18.75pt'>
+  <p class=MsoNormal>n/a<o:p></o:p></p>
+  </td>
+  <td width=82 valign=top style='width:61.5pt;border:solid black 1.0pt;
+  padding:0in 0in 0in 0in;height:18.75pt'>
+  <p class=MsoNormal>n/a<o:p></o:p></p>
+  </td>
+  <td width=82 valign=top style='width:61.5pt;border:solid black 1.0pt;
+  padding:0in 0in 0in 0in;height:18.75pt'>
+  <p class=MsoNormal><span lang=ZH-CN style='font-family:SimSun;mso-ascii-font-family:
+  "Times New Roman";mso-hansi-font-family:"Times New Roman"'>&#12288;&#65293;</span><o:p></o:p></p>
+  </td>
+  <td width=82 valign=top style='width:61.5pt;border:solid black 1.0pt;
+  border-right:solid black 2.25pt;padding:0in 0in 0in 0in;height:18.75pt'>
+  <p class=MsoNormal><span lang=ZH-CN style='font-family:SimSun;mso-ascii-font-family:
+  "Times New Roman";mso-hansi-font-family:"Times New Roman"'>&#12288;&#65293;</span><o:p></o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:7;mso-yfti-lastrow:yes;height:18.75pt'>
+  <td width=82 valign=top style='width:61.5pt;border-top:1.0pt;border-left:
+  2.25pt;border-bottom:2.25pt;border-right:1.0pt;border-color:black;border-style:
+  solid;padding:0in 0in 0in 0in;height:18.75pt'>
+  <p class=MsoNormal>MBGP<o:p></o:p></p>
+  </td>
+  <td width=82 valign=top style='width:61.5pt;border:solid black 1.0pt;
+  border-bottom:solid black 2.25pt;padding:0in 0in 0in 0in;height:18.75pt'>
+  <p class=MsoNormal>&nbsp;<o:p></o:p></p>
+  </td>
+  <td width=82 valign=top style='width:61.5pt;border:solid black 1.0pt;
+  border-bottom:solid black 2.25pt;padding:0in 0in 0in 0in;height:18.75pt'>
+  <p class=MsoNormal>&nbsp;<o:p></o:p></p>
+  </td>
+  <td width=82 valign=top style='width:61.5pt;border:solid black 1.0pt;
+  border-bottom:solid black 2.25pt;padding:0in 0in 0in 0in;height:18.75pt'>
+  <p class=MsoNormal>Da<o:p></o:p></p>
+  </td>
+  <td width=82 valign=top style='width:61.5pt;border:solid black 1.0pt;
+  border-bottom:solid black 2.25pt;padding:0in 0in 0in 0in;height:18.75pt'>
+  <p class=MsoNormal><span lang=ZH-CN style='font-family:SimSun;mso-ascii-font-family:
+  "Times New Roman";mso-hansi-font-family:"Times New Roman"'>&#12288;&#65293;</span><o:p></o:p></p>
+  </td>
+  <td width=82 valign=top style='width:61.5pt;border-top:1.0pt;border-left:
+  1.0pt;border-bottom:2.25pt;border-right:2.25pt;border-color:black;border-style:
+  solid;padding:0in 0in 0in 0in;height:18.75pt'>
+  <p class=MsoNormal><span lang=ZH-CN style='font-family:SimSun;mso-ascii-font-family:
+  "Times New Roman";mso-hansi-font-family:"Times New Roman"'>&#12288;&#65293;</span><o:p></o:p></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+</center>
+
+</div>
+
+
+</td></tr>
+</table>
+
+<br><br>
+
+||<a href="indexmain.html" tppabs="http://nislab.bu.edu/sc546/sc546Fall2002/RIP2/RIP/indexmain.html">Prev</a>||<a href="02r.html" tppabs="http://nislab.bu.edu/sc546/sc546Fall2002/RIP2/RIP/02.html">Next</a>||
+</center>
+
+
+
+<br><br>
+<hr width=50%>
+<br><br>
+<center>
+(c) Marcos Andres Diaz & Yasuko Iwai<br>
+<a href="javascript:if(confirm('http://www.bu.edu/eng/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?'))window.location='http://www.bu.edu/eng/'" tppabs="http://www.bu.edu/eng/" target="_top">Boston University, College of Engineering</a>
+<center>
+
+
+</td>
+</tr>
+</table>
+<img src="ya.gif" tppabs="http://nislab.bu.edu/sc546/sc546Fall2002/RIP2/RIP/pics/ya.gif" align="right">
+
+</body>
+
+</html>
+

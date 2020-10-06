@@ -1,0 +1,150 @@
+
+<html>
+<head><meta http-equiv=Content-Type content='text/html; charset=UTF-8'>
+
+
+<title>Problems</title>
+
+<style>
+<!--
+A:link {
+ color:black
+}
+A:visited {
+ color:black
+}
+A:active {
+ color:gray
+}
+A:hover {
+ text-decoration:underline;
+}
+A {
+ text-decoration:none
+}
+-->
+
+</STYLE>
+
+</head>
+
+<body style="margin: 5px 15px 5px 15px" text=#000000 bgcolor=#FFFFFF background="bg-ya4.gif" tppabs="http://nislab.bu.edu/sc546/sc546Fall2002/RIP2/RIP/pics/bg-ya4.gif">
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+// ????????:
+browserVer=navigator.appVersion.charAt(0);
+
+//??????????!???????????????
+if (browserVer >= 3){
+Cell1 = new Image(360,270);
+Cell1.src = "pr2.gif"/*tpa=http://nislab.bu.edu/sc546/sc546Fall2002/RIP2/RIP/pics/pr2.gif*/;
+
+Cell2 = new Image(360,270);
+Cell2.src = "pr3.gif"/*tpa=http://nislab.bu.edu/sc546/sc546Fall2002/RIP2/RIP/pics/pr3.gif*/;
+
+
+
+}
+
+
+//???????????!
+
+imgNum = 1
+function clickAni(imageID,imageName) {
+if (browserVer >= 3) {
+document.images[imageID].src =eval( imageName+ imgNum + ".src")
+
+imgNum++ //imgNum?1????
+if(imgNum > 2) {imgNum = 1} //imgNum?2?????????1???
+//??????????????
+}}
+// -->
+</SCRIPT>
+
+
+<img src="concl.gif" tppabs="http://nislab.bu.edu/sc546/sc546Fall2002/RIP2/RIP/pics/concl.gif" alt="conclusion" border=0 width=434 hight=58 hspace=0>
+<table width=90%>
+<tr>
+<td><font color=#FFFFFF>...................................................................................................................................................................................</font><br>
+
+<center>
+<table width=90%><tr><td>
+
+<h2><img src="li.gif" tppabs="http://nislab.bu.edu/sc546/sc546Fall2002/RIP2/RIP/pics/li.gif" width=30 hight=30 hspace=2 border=0><font color=#2e2e00>Evaluare RIP</font></h2>
+
+De la rezultatul simularii si caracteristicilor RIP bazate pe algoritmul Bellman-Ford, noi am confirmat urmatoarele:
+
+<!--From the result of simulation and features of RIP based on Bellman-Ford algorithm, we confirmed following problems.--><br>
+
+<ol>
+<li>Limitarea dimensiunii retelei<!--limitation of network scale-->
+<li>Numararea la infinit<!--Count to infinity-->
+<li>Viteza de convergenta<!--Speed of convergence-->
+</ol>
+
+
+
+1. Pentru ca numarul maxim de hopuri este 15 in RIP, dimensiunea retelei este limitata pentru a fi una unica. Nu exista nici o cale de a rezolva problema folosind RIP.
+<!--1. Because maximum number of hops is 15 in RIP, network size is limited to be small one. There is no way to solve the problem by using RIP.--><br>
+2. Cat despre numararea la infinit, ciclul scenariului specific  poate fi eviatat folosind o tehnica cunoscuta precum impartirea orizontului cu intoarcere invalidata (split-horizon with poisoned reverse). Ideea este simpla: in fig.2 daca C trece prin B pentru a ajunge la A, atunci C va anunta B ca distanta pana la A este infinit. C va contiuna sa anunte acest lucru lui B , atat timp cat traseul pentru a ajunge la A trece prin B. Atata timp cat B " crede" ca C nu are cale catre A, B nu va incerca traseul A catre C, atata timp cat C continua sa treaca prin B. Cu toate acestea impartirea orizontului cu intoarcere invalidata nu rezolva intotdeauna problema numararii ppana la infinit. De exemplu, numararea la infinit apare si in cazul in care D "ii spune lui " C inaintea lui C.(fig.3)
+<!--2. As for count to infinity, the specific looping scenario can be avoided using a technique known as split-horizon with poisoned reverse. The idea is simple: in fig.2, if C routes through B to get to destination A, then C will advertise to B that its distance to A is infinity. C will continue telling this to B as long as it routes to A via B. Since B believes that C has no path to A, B will never attempt to route to A via C, as long as C continues to route to A via B. However, split-horizon with poison reverse does not always solve the count to infinity problem. For instance, count to infinity comes again in the case D tells C prior to C. (Fig.3)--><br>
+
+
+<table>
+<tr>
+<td><img name="pr" src="pr.gif" tppabs="http://nislab.bu.edu/sc546/sc546Fall2002/RIP2/RIP/pics/pr.gif" width=360 height=270 border=0 alt="poison reverse"></td>
+<td bgcolor=#aaaaaa></td>
+<td><img name="pr2" src="pr2.gif" tppabs="http://nislab.bu.edu/sc546/sc546Fall2002/RIP2/RIP/pics/pr2.gif" width=360 height=270 border=0 alt="poison reverse"></td>
+</tr>
+
+<tr>
+<td><center>Fig.2 Impartirea orizontului cu intoarcere invalidata</center></td>
+<td></td>
+<td><center><FORM NAME="FORM1">
+<INPUT TYPE="button" "NAME=submit" VALUE="next state" onClick="clickAni('pr2','Cell')" >
+</FORM>Fig.3 Numararea la infinit </center></td>
+</tr>
+
+</table>
+<br><br>
+Noi putem creste convergenta cu ajutorul unui mecanism de actualizare, care permite actualizarea tabelului imediat, daca sunt semnalate schimbari de stare cum ar fi Link Down. In simularea RIP, daca se apasa un buton, noi putem actualiza starea imediat cu Step mod.
+<!--3. We can speed up the convergence speed with triggered update; which allows immediate update the table if there are any state changes such as link down. In RIP simulation, if any link down, we can update the state immediately by step mode.--> <br><br>
+
+<h2><img src="li.gif" tppabs="http://nislab.bu.edu/sc546/sc546Fall2002/RIP2/RIP/pics/li.gif" width=30 hight=30 hspace=2 border=0><font color=#2e2e00>Concluzii</font></h2> 
+  Aceasta a fost o aplicatie Java pentru protocolul de rutare RIP bazata pe algoritmul Bellman-Ford.
+  <!--We reported the Java applet of the RIP routing protocol based on Bellman-Ford algorithm. The effectiveness of this routing protocol was re-confirmed by conducting a simulation. We are going to work to realize a more realistic and complicated network based on this study.--><br><br>
+
+Multumim.
+
+</td></tr></table>
+<br><br>
+<br><br>
+||<a href="05r.html" tppabs="http://nislab.bu.edu/sc546/sc546Fall2002/RIP2/RIP/05.html">Prev</a>||<a href="07r.html" tppabs="http://nislab.bu.edu/sc546/sc546Fall2002/RIP2/RIP/07.html">Next</a>||
+
+</center>
+
+
+
+
+<br><br>
+<hr width=50%>
+<br><br>
+<center><font color=red>Versiune Romana - Popescu Mioara
+<br>
+Universitatea Oviduis, Constanta, Facultatea de Matematica si Informatica</font> </center>
+<center>
+(c) Marcos Andres Diaz & Yasuko Iwai<br>
+<a href="javascript:if(confirm('http://www.bu.edu/eng/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?'))window.location='http://www.bu.edu/eng/'" tppabs="http://www.bu.edu/eng/" target="_top">Boston University, College of Engineering</a>
+<center>
+
+
+</td>
+</tr>
+</table>
+<img src="ya.gif" tppabs="http://nislab.bu.edu/sc546/sc546Fall2002/RIP2/RIP/pics/ya.gif" align="right">
+
+</body>
+
+</html>
+
