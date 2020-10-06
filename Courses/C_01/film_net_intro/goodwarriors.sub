@@ -1,0 +1,151 @@
+{230}{330}Razboinicii retelei|IP pentru pace
+{440}{500}Actori:
+{650}{700}Pachetul TCP (Transmission Control Protocol)
+{820}{880}Pachetul ICMP (Internet Control Message Protocol) - ping
+{940}{980}Pachetul UDP (User Datagram Protocol)
+{1080}{1140}Routerul
+{1200}{1260}Ping-ul mortal
+{1360}{1450}Switch-ul
+{1470}{1520}...
+{1530}{1610}Pentru prima oara in istorie...
+{1620}{1740}Oamenii si masinile au un scop comun
+{1750}{1940}O super-forta care sa nu cunoasca limite geografice|Sa nu tina cont de rasa, crez sau culoare
+{1950}{2040}O noua era care sa apropie oamenii prin intermediul comunicatiilor
+{2070}{2100}Acestea sunt...
+{2110}{2220}INCEPUTURILE INTERNETULUI.
+{2250}{2320}Vrei sa stii cum functioneaza?|Apasa aici:
+{2331}{2395}pentru a porni calatoria in...
+{2405}{2425}RETEA.
+{2480}{2563}Oare ce s-a intamplat cand |ai urmat acea legatura?
+{2565}{2608}Ai transmis un flux de informatii,
+{2610}{2703}care pleca pana la server.
+{2708}{2810}Unde Dl. IP le impacheteaza, eticheteaza|si apoi le transmite mai departe.
+{2830}{2875}Fiecare pachet are o dimensiune maxima fixata.
+{2885}{2985}Serverul decide cum sa imparta informatia...
+{2990}{3010}si cum sa o impacheteze.
+{3020}{3110}Pachetele trebuie sa aiba o eticheta,|continand informatii importante
+{3111}{3290}precum adresa destinatiei, adresa sursei, tipul pachetului.
+{3670}{3739}Din cauza ca acest pachet va pleca spre Internet,
+{3751}{3828}va contine o adresa suplimentara, necesara proxy-ului,
+{3830}{3900}care are o functie speciala, asa cum vom vedea in curand.
+{3910}{3990}Pachetul este apoi transmis prin reteaua locala
+{4002}{4041}sau LAN (Local Area Network).
+{4048}{4174}Aceasta retea este folosita pentru a conecta calculatoarele, ruterele, imprimantele etc.,
+{4178}{4281}pentru transmitearea de informatii in interiorul unei cladiri.
+{4283}{4368}LAN-ul este destul de haotic, si din pacate
+{4383}{4410}pot exista "accidente".
+{4660}{4730}Autostrada LAN-ului, contine tot felul de informatii.
+{4738}{4848}Pachete IP, pachete Novell, pachete AppleTalk.
+{4851}{4910}Acestea merg impotriva traficului - ca de obicei...
+{4915}{5062}Routerul local citeste adresa IP si daca este nevoie, il aseaza in alta retea.
+{5080}{5142}Ah, Routerul!...
+{5145}{5226}instrumentul de control intr-o lume a haosului.
+{5250}{5380}"Asta vine aici, asta acolo, asta nu-i de aici, de asta n-am nevoie".
+{5500}{5544}Acesta este...
+{5545}{5665}sistematic, fara interese, organizat, conservator...
+{5671}{5704}uneori nu destul de rapid...
+{5711}{5822}dar macar este exact... |de obicei.
+{6185}{6210}Atunci cand pachetele parasesc routerul...
+{6213}{6300}isi gasesc traseul in reteaua corporatiei,
+{6305}{6360}si se indreapta spre switch.
+{6400}{6434}Putin mai eficient ca routerul,
+{6440}{6530}switch-ul selectioneaza pachetele mai rapid
+{6535}{6590}trimitandu-le catre destinatie.
+{6600}{6654}daca vreti puteti sa-l numiti un "pinball digital".
+{6662}{6780}"uite ca vine, tu pe aici, mai repede, tu la dreapta,|tu la stanga, inca unu'!, tu acolo, acolo, GOL!"
+{7120}{7180}Cand pachetele ajung la destinatie,
+{7185}{7258}sunt preluate de placa de retea,
+{7265}{7290}gata sa fie transmise la urmatorul nivel...
+{7320}{7385}in acest caz, proxy-ul.
+{7395}{7489}Proxy-ul este folosit de cele mai multe companii ca un intermediar
+{7495}{7625}ce stabileste conexiunea la Internet si asigura securitatea.
+{7665}{7765}Dupa cum vedeti, pachetele pot avea dimensiuni diferite...
+{7775}{7830}in functie de continut.
+{8250}{8390}Proxy-ul deschide pachetul si cauta adresa Web (URL).
+{8405}{8500}Daca adresa este una permisa...
+{8505}{8560}pachetul va fi transmis spre Internet.
+{8710}{8855}Exista uneori adrese pe care proxy-ul trebuie sa le "filtreze"...
+{8865}{8990}deoarece nu corespund cu domeniul de activitate al corporatiei.
+{9010}{9105}Aceste pachete sunt imediat distruse.
+{9135}{9420}Pentru cele care reusesc sa treaca testul, urmeaza inca un drum.
+{9545}{9575}Urmatoarea oprire...
+{9595}{9620}"Firewall-ul" (zidul de protectie).
+{9715}{9800}Firewall-ul are doua functii.
+{9805}{9910}Opreste pachetele "rele" sa intre din Internet in reteaua locala si...
+{9915}{10080}blocheaza informatiile confidentiale din retea sa plece in Internet.
+{10120}{10150}Odata trecute de firewall...
+{10155}{10190}un router le reculege...
+{10191}{10320}si le aseaza intr-o lume mult mai incarcata, sau "pe banda" cum se mai zice.
+{10330}{10440}Evident, banda nu este destul de mare ca toate sa incapa...
+{10450}{10489}Probabil ca va intrebati...
+{10490}{10595}Ce se intampla cu toate aceste pachete care sunt distruse?
+{10597}{10765}Ei bine, daca Dl. IP nu primeste confirmarea de la destinatie la timp...
+{10766}{10820}va retransmite o copie a pachetului distrus.
+{10875}{10970}Acum suntem gata sa intram in lumea Internetului.
+{10990}{11077}O panza de paianjen de retele interconectate,
+{11080}{11120}care se intinde pe tot globul.
+{11135}{11250}Aici, routere si switch-uri stabilesc drumuri intre retele.
+{11270}{11415}Reteaua este diferita de LAN - aflata in spatele zidului protector al firewall-ului.
+{11420}{11460}Aici este vestul salbatic!
+{11472}{11492}Spatiu la discretie...
+{11493}{11525}Multe ocazii...
+{11528}{11600}Multe locuri de explorat si de vazut...
+{11625}{11695}Multumita controlului redus,
+{11699}{11816}idei noi isi fac loc pentru a-si incerca norocul...
+{11830}{11926}Dar din cauza acestora, apar si diverse primejdii.
+{11933}{12055}Niciodata nu vei sti cand vei intalni Ping-ul mortal.
+{12059}{12225}O versiune de cerere PING normala|pe care un idiot a trimis-o spre o adresa inexistenta.
+{12265}{12350}Traseele pe care le urmaresc pachetele trec prin sateliti,
+{12351}{12435}linii telefonice, medii fara fir si chiar cablul trans-atlantic.
+{12440}{12530}Nu intotdeauna merg pe drumul cel mai scurt sau cel mai rapid si sigur, 
+{12535}{12580}dar vor ajunge la destinatie...
+{12595}{12620}... probabil...
+{12635}{12699}Poate chiar de aceea cateodata se cheama...
+{12711}{12745}"World Wide Wait"
+{12755}{12810}Dar, cand totul functioneaza bine...
+{12815}{12925}pachetul poate inconjura globul de 5 ori, cat ai clipi,
+{12930}{13045}si aceasta la costul unui apel telefonic local sau mai putin.
+{13080}{13189}In apropierea destinatiei pachetului vom gasi alt firewall.
+{13255}{13330}Din punctul de vedere a unui pachet ce contine date,
+{13335}{13450}acesta poate fi un bastion de securitate sau un adversar de temut
+{13460}{13580}totul depinde de partea cui esti, si ce intentii ai.
+{13581}{13730}Firewall-ul va lasa sa intre doar pachetele ce satisfac anumite conditii.
+{13750}{13835}Acest firewall functioneaza asupra porturilor 80 si 25.
+{13846}{13972}Toate incercarile de intrare prin alte porturi vor fi refuzate.
+{14315}{14408}Portul 25 este folosit pentru posta electronica,
+{14465}{14575}iar portul 80 este intrarea pachetelor din Internet ce vor accesa serverul Web.
+{14641}{14680}In cadrul firewall-ului...
+{14685}{14740}pachetele sunt filtrate mai atent.
+{14751}{14900}Unele pachete trec fara probleme, altele arata putin mai "dubios".
+{14910}{14969}Politia firewall-ului nu e usor de pacalit.
+{14975}{15030}Este cazul acestui pachet ping mortal...
+{15072}{15168}care a incercat sa se deghizeze intr-un pachet ping normal.
+{15180}{15290}"Este bine, OK, nici o problema, o zi buna... la revedere..."
+{15313}{15393}Pentru pachetele destul de norocoase sa ajunga pana aici,
+{15395}{15440}calatoria este ca si terminata.
+{15520}{15650}Sunt aliniate in interfata, pentru a fi preluate de serverul Web.
+{15680}{15755}In zilele noastre, serverul Web poate rula pe mai multe echipamente:
+{15765}{15849}poate fi un mainframe, o camera Web sau un PC,
+{15853}{15910}sau, de ce nu, chiar frigiderul d-voastra...
+{15915}{15945}configurat corect...
+{15950}{16075}puteti sa aflati daca mai aveti pui sau sa il puneti sa comande daca hrana s-a terminat.
+{16080}{16150}Nu uitati - acesta este doar inceputul retelei.
+{16165}{16217}Orice este posibil.
+{16305}{16327}Unul cate unul,
+{16330}{16445}pachetele sunt primite, deschise si desfacute.
+{16530}{16725}Informatiile pe care le contin, adica tocmai cererea dv, sunt transmise serverului Web.
+{16910}{16980}Pachetul este reciclat,
+{17055}{17095}gata sa fie folosit din nou si umplut...
+{17110}{17185}cu informatia pe care ati cerut-o,
+{17305}{17410}etichetat si transmis inapoi catre d-voastra.
+{17460}{17505}Trecand prin firewall,
+{17510}{17600}routere si apoi prin intreg Internetul.
+{17710}{17770}Inapoi prin firewall-ul corporatiei d-voastra
+{17900}{17950}si apoi prin placa de retea,
+{17970}{18110}gata sa furnizeze browser-ului informatia pe care ati dorit-o.
+{18155}{18222}Adica, acest film...
+{18365}{18453}Satisfacute de efortul depus si crezand intr-o lume mai buna,
+{18455}{18615}pachetele merg fericite catre apus, spre o urmatoare zi
+{18616}{18730}bucuroase ca si-au indeplinit menirea.
+{18800}{18860}Nu-i asa ca e un final fericit?
+{18890}{18990}Tradus de Cosmin Varlan si Sabin Buraga
