@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head><meta http-equiv=Content-Type content='text/html; charset=UTF-8'>
+
+  <title>what's RIP</title>
+           
+  <style>
+<!--
+A:link {
+ color:black
+}
+A:visited {
+ color:black
+}
+A:active {
+ color:gray
+}
+A:hover {
+ text-decoration:underline;
+}
+A {
+ text-decoration:none
+}
+-->
+
+</style>
+</head>
+  <body style="margin-top: 5px; margin-right: 15px; margin-bottom: 5px; margin-left: 15px; " text=#000000 bgcolor="#ffffff" background="bg-ya4.gif" tppabs="http://nislab.bu.edu/sc546/sc546Fall2002/RIP2/RIP/pics/bg-ya4.gif">
+
+<img src="what.gif" tppabs="http://nislab.bu.edu/sc546/sc546Fall2002/RIP2/RIP/pics/what.gif" alt="What's RIP" border=0 width=434 hight=58 hspace=0>
+<table width="90%">
+  <tbody>
+    <tr>
+      <td><font color="#ffffff">...................................................................................................................................................................................</font><br>
+      <center>
+      <table width="90%">
+        <tbody>
+          <tr>
+            <td>
+            <h2><a name="his"><img src="li.gif" tppabs="http://nislab.bu.edu/sc546/sc546Fall2002/RIP2/RIP/pics/li.gif" width=30 hight=30 hspace=2 border=0><font color=#2e2e00>Istoric</font></a>
+            </h2>
+     <!-- The Routing Information Protocol (RIP) was one of the earliest intra-AS 
+Internet routing protocols and is still in widespread use today. It traces 
+its origins and its name to the Xerox Network Systems(XNS) architecture. 
+The widespread deployment of RIP was due in great part to its inclusion in 
+1982 of the Berkeley Software Distribution (BSD) version of UNIX supporting 
+TCP/IP. RIP version 1 is defined in RFC 1058, with a backward- compatible 
+ver.2 defined in RFC 2453. -->
+			RIP (Routing Information Protocol) a fost unul dintre primele
+intra-AS Internet protocale de rutare si este si azi unul dintre cele mai
+raspandite. Acesta isi pastreaza originile si numele arhitecturii
+Xerox Network Systems (XNS). Raspandirea larga a RIP a fost datorata in mare 
+parte companiei Berkeley Software Distribution (BSD), care in 1982 scoate 
+o versiune UNIX care suporta TCP/IP. RIP veriunea 1 este definita in RFC 1058,
+cu o retro-compatibila versiune 2 definita in RFC 2453.  <br>
+            <br>
+            <h2><a name="DV"><img src="li.gif" tppabs="http://nislab.bu.edu/sc546/sc546Fall2002/RIP2/RIP/pics/li.gif" width=30 hight=30 hspace=2 border=0><font color=#2e2e00>Distance Vector Routing Algorithm</font></a>
+            </h2>
+ <!--   Now recall the distance vector (DV), and look at its features.-->
+ 	Sa ne amintim algoritmul Distance Vector (DV), si sa privim caracterisiticile sale.<br>
+ <!-- DV algorithm is iterative, asynchronous and distributed one;-->          
+    Algoritmul DV este iterativ, asincron si distribuit unic.
+            <ul>
+              <li> El este distribuit in asa fel incat fiecare nod primeste
+informatii de la unul sau mai multe noduri vecine atasate direct, executa 
+un calcul si apoi distribuie rezultatelele calculului sau in spate la vecinii lui.
+ <!--It is distributed in that each node receives some information
+from one or more of its directly attached neighbors performs a calculation,
+and may then distribute the results of its calculation back to its neighbors.-->
+              </li>
+              <li>El este iterativ, deoarece procesul contiuna pana cand nici o informmatie
+nu mai este schimbata intre vecini.<!--It is iterative in that this process continues on until 
+no more information is exchanged between neighbors.--> </li>
+              <li>Acest algoritm este asincron deoarece 
+nu necesita toate nodurile pentru a opera in "lockstep" cu fiecare.
+<!--This algorithm is asynchronous in that it does not require 
+all of the nodes to operate in lockstep with each other.  --></li>
+            </ul>
+            <h2><a name="RIP"><img src="li.gif" tppabs="http://nislab.bu.edu/sc546/sc546Fall2002/RIP2/RIP/pics/li.gif" width=30 hight=30 hspace=2 border=0><font color=#2e2e00>Principalele Trasaturi ale RIP</font></a>
+            </h2>
+        RIP este <b><font color="#ff0000">Vector Distanta protocol</font></b>
+  care opereaza intr-o maniera foarte apropiata de protocolul idealizat, 
+  care permite ruterelor vecine sa schimbe intre ele informatia de rutare.
+  Caracteristicile RIP sunt impartite dupa cum urmeaza:
+   <!-- that operates in a manner very close to the idealized protocol, which allows 
+neighboring routers to exchange the routing information with each other. The
+features of RIP are as follows;  -->              
+            <ul>
+              <li>RIP pentru IPv4 ; RFC 1058/1721/1722/1723/1724  </li>
+              <li>RIP pentru IPv6 ; RFC 2080  </li>
+              <li>Rutare in BSD, SunOS  </li>
+              <li>Maximum hopuri; 15  </li>
+              <li>Cold-Start ; Ii ia aproximativ 450s(=15x30 ) pentru a calcula. 
+ </li>
+              <li> Schimba informatia la fiecare 30 sec. in baza de date
+ Distance Vector (tabelul de rutare) folosind UDP port 520.
+            <!--  Exchange Distance Vector database (routing table) information 
+every 30 sec.( using UDP port 520)--><br>
+  -&gt;transfer conmditionat de schimbarea nodului/linkului<!--about the condition change of node/link </li>
+              --><li>Daca nu se raspunde in 180 sec. cade reteaua <!--If there is no response for 180 sec, the network is down 
+-->(keep-alive)    </li>
+            </ul>
+            <center>
+            <table border="1" bgcolor="#efffff">
+              <tbody>
+                <tr>
+                  <td> Expresia pentru distanta minima; <br>
+  	D(i,j) ; vector distanta <br>
+  	d(i,j) ; distanta dintre nod_i si nod_j<br>
+   	D(i,j) = min [d(i,k) + D(k,j)] (for all k) <br>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            </center>
+            <h2><a name="BF"><img src="li.gif" tppabs="http://nislab.bu.edu/sc546/sc546Fall2002/RIP2/RIP/pics/li.gif" width=30 hight=30 hspace=2 border=0><font color=#2e2e00>Algoritmul Bellman-Ford (Matematic)</font></a>
+            </h2>
+   Algoritmul Bellman-Ford a fost dezvolatat de  Xerox-PARC ca XNS-RIP. Acesta
+   defineste calea optima catre destinatie: distanta minima si informatia 
+   vector distanta de atribut. Acest algoritm este <i>matematic</i> exprimat 
+   in tabelul urmator.<!-- It defines 
+the optimum path to the destination; minimum distance and attribute distance 
+vector information. This algorithm is <i>mathematically</i> expressed as following
+table.--><br>
+            <br>
+            <center>
+            <table border="1" bgcolor="#efffff">
+              <tbody>
+                <tr>
+                  <td><img src="bf.jpg" tppabs="http://nislab.bu.edu/sc546/sc546Fall2002/RIP2/RIP/pics/bf.jpg" alt="Bellman-Ford" border="0" hspace="0">
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            <br>
+   ||<a href="01r.html" tppabs="http://nislab.bu.edu/sc546/sc546Fall2002/RIP2/RIP/01.html">Prev</a>
+ ||<a href="03r.html" tppabs="http://nislab.bu.edu/sc546/sc546Fall2002/RIP2/RIP/03.html">Next</a>
+ ||  </center>
+            <br>
+            <br>
+            <hr width="50%"><br>
+            <br>
+            <center> (c) Marcos Andres Diaz &amp; Yasuko Iwai<br>
+            <a href="javascript:if(confirm('http://www.bu.edu/eng/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?'))window.location='http://www.bu.edu/eng/'" tppabs="http://www.bu.edu/eng/" target="_top">Boston University,
+College of Engineering</a>
+            <center></center>
+            </center>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <img src="ya.gif" tppabs="http://nislab.bu.edu/sc546/sc546Fall2002/RIP2/RIP/pics/ya.gif" align="Right">
+      </center>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<html>
+<head><meta http-equiv=Content-Type content='text/html; charset=UTF-8'>
+
+
+<title></title>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+//――――――――――――――――――――――――――――――――――――――
+// ユーザが設定する部分はここから！！
+//――――――――――――――――――――――――――――――――――――――
+	//画像ファイル名を設定して下さい(相対パスでも絶対パスでも可)
+imgfile = "oyaji.gif"/*tpa=http://nislab.bu.edu/sc546/sc546Fall2002/RIP2/RIP/pics/oyaji.gif*/;
+	//落ちるスピードの変数設定(この値を小さくする程,星の落ちるスピードが速くなります)
+speed = 120;
+//――――――――――――――――――――――――――――――――――――――
+// ユーザが設定する部分はここまで！！
+//――――――――――――――――――――――――――――――――――――――
+
+//x座標の変数設定
+x = new Array(100,150,200,250,300,350,400,450,500,550,600,650,700,750,800,850);
+//y座標の変数設定
+y = new Array(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0);
+//落ちるスピード
+z = new Array();
+
+
+//スタイルシートの設定
+document.write('<STYLE TYPE="text/css"><!--');
+document.write('.img	{position:absolute;top:0px;left:0px;}');
+document.write('--></STYLE>');
+
+//落ちるスピードをランダム設定
+for(count = 0;count < 16;count++){
+	z[count] = Math.random() * 4 + 1;
+}
+function ShootingStar(){
+	if(document.all || document.layers || document.getElementById){
+		setTimeout("ShootingStar()", speed);
+		for(count = 1; count <= 16; count++){
+			id = "img" + count;
+			yy = z[count - 1] * y[count - 1];
+				//document.allがサポートされている場合
+			if(document.all){
+				document.all.item(id).style.top = yy;
+				document.all.item(id).style.left = x[count - 1];
+				//document.layersがサポートされている場合
+			}else if(document.layers){
+				document.layers[id].moveTo(x[count - 1], yy);
+				//document.getElementByIdがサポートされている場合
+			}else if(document.getElementById){
+				document.getElementById(id).style.top = yy;
+				document.getElementById(id).style.left = x[count - 1];
+			}
+		}
+	}else{				//サポートされていない場合
+		return;
+	}
+	for(count = 0;count < y.length;count++){
+		y[count]++;		//y座標を動かすためにカウントアップする
+	}
+
+//x座標を動かすためにランダムにカウントアップする
+	for (count = 0;count < x.length;count++){
+		if((count % 4) == 0){x[count] = x[count] + Math.floor(Math.random() * 1);}
+		if((count % 4) == 1){x[count] = x[count] - Math.floor(Math.random() * 2);}
+		if((count % 4) == 2){x[count] = x[count] + Math.floor(Math.random() * 2);}
+		if((count % 4) == 3){x[count] = x[count] - Math.floor(Math.random() * 1);}
+	}
+	
+	for(count = 0;count < 16;count++){
+		if((y[count] * z[count]) >= 500){
+			x[count] = 50 + (50 * (count + 1));
+			y[count] = 0;
+		}
+	}
+}
+//-->
+
+
+
+</SCRIPT>
+
+
+
+
+</HEAD>
+<BODY onLoad="ShootingStar()">
+
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+//document.all or document.layers or document.getElementByIdが
+//サポートされていなければ表示しないようにする
+if(document.all || document.layers || document.getElementById){
+	for(count = 1; count <= 16; count++){
+		id = "img" + count;
+		document.write('<LAYER NAME=' + id +' TOP=0 LEFT=0><IMG CLASS=img ID=' +
+			id + ' SRC=' + imgfile + '></LAYER>');
+	}
+}
+//-->
+</SCRIPT>
+<body bgcolor="#ffffff">
+
+
+<br><br><br>
+<center>
+<a href="index.html" tppabs="http://nislab.bu.edu/sc546/sc546Fall2002/RIP2/RIP/index.html" target="_top"><img src="enter.gif" tppabs="http://nislab.bu.edu/sc546/sc546Fall2002/RIP2/RIP/pics/enter.gif" hspace=0 border=0 alt="enter" width=451 hight=453></a>
+</center>
+
+
+
+
+</body>
+
+</html>
+

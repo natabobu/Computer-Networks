@@ -1,0 +1,129 @@
+
+<html>
+<head><meta http-equiv=Content-Type content='text/html; charset=UTF-8'>
+
+
+<title>Problems</title>
+
+<style>
+<!--
+A:link {
+ color:black
+}
+A:visited {
+ color:black
+}
+A:active {
+ color:gray
+}
+A:hover {
+ text-decoration:underline;
+}
+A {
+ text-decoration:none
+}
+-->
+
+</STYLE>
+
+</head>
+
+<body style="margin: 5px 15px 5px 15px" text=#000000 bgcolor=#FFFFFF background="bg-ya4.gif" tppabs="http://nislab.bu.edu/sc546/sc546Fall2002/RIP2/RIP/pics/bg-ya4.gif">
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+// ????????:
+browserVer=navigator.appVersion.charAt(0);
+
+//??????????!???????????????
+if (browserVer >= 3){
+Cell1 = new Image(590,410);
+Cell1.src = "c-inf.jpg"/*tpa=http://nislab.bu.edu/sc546/sc546Fall2002/RIP2/RIP/pics/c-inf.jpg*/;
+
+Cell2 = new Image(590,410);
+Cell2.src = "c-inf2.jpg"/*tpa=http://nislab.bu.edu/sc546/sc546Fall2002/RIP2/RIP/pics/c-inf2.jpg*/;
+
+Cell3 = new Image(590,410);
+Cell3.src = "c-inf3.jpg"/*tpa=http://nislab.bu.edu/sc546/sc546Fall2002/RIP2/RIP/pics/c-inf3.jpg*/;
+
+
+}
+
+
+//???????????!
+
+imgNum = 1
+function clickAni(imageID,imageName) {
+if (browserVer >= 3) {
+document.images[imageID].src =eval( imageName+ imgNum + ".src")
+
+imgNum++ //imgNum?1????
+if(imgNum > 3) {imgNum = 1} //imgNum?5?????????1???
+//??????????????
+}}
+// -->
+</SCRIPT>
+
+
+<img src="prob.gif" tppabs="http://nislab.bu.edu/sc546/sc546Fall2002/RIP2/RIP/pics/prob.gif" alt="problems" border=0 width=434 hight=58 hspace=0>
+<table width=90%>
+<tr>
+<td><font color=#FFFFFF>...................................................................................................................................................................................</font><br>
+
+<center>
+<table width=90%><tr><td>
+
+
+Whereas the RIP is so simple by using DV algorithm, it also has some problems such as counting infinity, slow convergence, etc.<br>
+
+The DV algorithm, depending on the relative path costs, can converge slowly and can have routing loops while the algorithm is converging. ( N routers; traffic=N<sup>2</sup> ,  running of calculation =N<sup>3</sup>) DV also suffers from <b>count to infinity problem (fig.1)</b>.<br><br><br>
+
+<center>
+<table border=1><tr><td>
+<img name="c-inf" src="c-inf.jpg" tppabs="http://nislab.bu.edu/sc546/sc546Fall2002/RIP2/RIP/pics/c-inf.jpg" width=590 height=410 border=0 alt="count to infinity">
+
+
+</td/></tr></table><br>
+<FORM NAME="FORM1">
+<INPUT TYPE="button" "NAME=submit" VALUE="The state 30 sec. after" onClick="clickAni('c-inf','Cell')" >
+</FORM>
+<br><b>
+
+Fig.1 count to infinity problem
+</b>
+
+
+</center>
+<br><br>
+Now look at these phenomenons by running the RIP applet.
+
+
+
+</td></tr></table>
+<br><br>
+
+||<a href="02.html" tppabs="http://nislab.bu.edu/sc546/sc546Fall2002/RIP2/RIP/02.html">Prev</a>||<a href="04.html" tppabs="http://nislab.bu.edu/sc546/sc546Fall2002/RIP2/RIP/04.html">Next</a>||
+
+</center>
+
+
+
+
+<br><br>
+<hr width=50%>
+<br><br>
+<center>
+(c) Marcos Andres Diaz & Yasuko Iwai<br>
+<a href="javascript:if(confirm('http://www.bu.edu/eng/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?'))window.location='http://www.bu.edu/eng/'" tppabs="http://www.bu.edu/eng/" target="_top">Boston University, College of Engineering</a>
+<center>
+
+
+</td>
+</tr>
+</table>
+<img src="ya.gif" tppabs="http://nislab.bu.edu/sc546/sc546Fall2002/RIP2/RIP/pics/ya.gif" align="right">
+
+</body>
+
+</html>
+
