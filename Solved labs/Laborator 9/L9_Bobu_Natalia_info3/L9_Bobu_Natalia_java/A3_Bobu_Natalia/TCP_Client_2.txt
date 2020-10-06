@@ -1,0 +1,6 @@
+@echo OFF
+@echo TCP_Client_2
+@echo:
+javac TCP_Client.java
+java TCP_Client
+pause

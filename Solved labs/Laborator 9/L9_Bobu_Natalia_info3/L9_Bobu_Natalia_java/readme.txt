@@ -1,0 +1,1 @@
+Gmail nu primeste fisiere de tip .bat, de aceea le-am salvat cu extensia .txt

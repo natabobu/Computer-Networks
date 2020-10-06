@@ -1,0 +1,6 @@
+@echo OFF
+@echo TCP_Sserver_Joc
+@echo:
+javac TCP_Server_Joc.java
+java TCP_Server_Joc
+pause

@@ -1,0 +1,6 @@
+@echo OFF
+@echo UDP_Client
+@echo:
+javac UDP_Client.java
+java UDP_Client
+pause

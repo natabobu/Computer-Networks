@@ -1,0 +1,6 @@
+@echo OFF
+@echo UDP_Client_timp
+@echo:
+javac UDP_timp_client.java
+java UDP_timp_client
+pause
